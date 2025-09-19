@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-18_20-01-16",
+            "content": "@@ -81,17 +81,16 @@\n color = \n-:\n %0A       \n@@ -100,11 +100,17 @@\n ze =\n- :%0A\n+%0A        \n %0A   \n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-09-18_20-02-07",
+            "content": "@@ -18,210 +18,95 @@\n def \n-__\n init\n-__(self): #construtor%0A        self.color: str = %22%22 #atributo%0A        self.size: str = %22%22%0A        self.wetness: int = 0%0Aminha = Towel() #objeto%0Aminha.color = %22blue%22%0Aminha.size = %22P%22%0A%0Aprint(minha.color)\n+(color: string, size: string, wetness: number)%0A        color = :%0A        size = :%0A%0A    \n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-09-18_21-25-54",
+            "content": "@@ -143,119 +143,85 @@\n = 0%0A\n-%0Aprint(%22Qual a sua toalha?%22)%0Acolor = input()%0Atowel: Towel = Towel(color,\n+minha = Towel() #objeto%0Aminha.color = %22blue%22%0Aminha.size =\n  %22P%22\n-)\n+%0A\n %0Aprint\n- (f%22Sua toalha %C3%A9 %7Btowel\n+(minha\n .color\n-%7D%22\n )\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-09-18_21-32-54",
+            "content": "@@ -142,95 +142,8 @@\n  = 0\n-%0A    def __str__(self):%0A            return f%22%7Bself.color%7D, %7Bself.size%7D, %7Bself.wetness%7D%22\n %0A%0Apr\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-09-18_21-46-22",
+            "content": "class Towel:\n    def __init__(self): #construtor\n        self.color: str = \"\" #atributo\n        self.size: str = \"\"\n        self.wetness: int = 0\n    def __str__(self):\n            return f\"{self.color}, {self.size}, {self.wetness}\"\n\nprint(\"Qual a sua toalha?\")\ncolor = input()\ntowel: Towel = Towel(color, \"P\")\nprint (f\"Sua toalha \u00e9 {towel.color}\")",
+            "lines": "12"
+        }
+    ]
+}
