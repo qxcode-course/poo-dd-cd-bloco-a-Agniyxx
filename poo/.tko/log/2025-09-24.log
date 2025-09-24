@@ -1,0 +1,15 @@
+2025-09-24 09:20:11, MOVE, v:1, k:toalha, mode:PICK
+2025-09-24 09:21:16, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:48
+2025-09-24 09:21:58, MOVE, v:1, k:toalha, mode:BACK
+2025-09-24 09:22:00, MOVE, v:1, k:toalha, mode:PICK
+2025-09-24 09:22:04, MOVE, v:1, k:toalha, mode:BACK
+2025-09-24 09:25:52, SELF, v:1, k:toalha, rate:100, human:sim_amigo_monitor, guide:sim, alone:5, study:180
+2025-09-24 09:26:16, SELF, v:1, k:toalha, rate:100, human:sim_amigo_monitor, guide:sim, alone:6, study:180
+2025-09-24 09:26:29, MOVE, v:1, k:animal, mode:DOWN
+2025-09-24 09:26:33, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 10:05:45, EXEC, v:1, k:animal, mode:FULL, rate:0, size:23
+2025-09-24 10:06:44, EXEC, v:1, k:animal, mode:FULL, rate:0, size:23
+2025-09-24 10:51:10, EXEC, v:1, k:animal, mode:FULL, rate:0, size:23
+2025-09-24 10:51:15, MOVE, v:1, k:animal, mode:BACK
+2025-09-24 10:53:31, MOVE, v:1, k:animal, mode:PICK
+2025-09-24 10:53:44, MOVE, v:1, k:animal, mode:BACK

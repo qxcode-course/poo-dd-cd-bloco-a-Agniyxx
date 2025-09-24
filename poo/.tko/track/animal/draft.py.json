@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-24_10-05-45",
+            "content": "@@ -170,22 +170,17 @@\n f ageBy(\n-self):\n+)\n %0A%0A    de\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-24_10-06-44",
+            "content": "@@ -207,31 +207,8 @@\n f):%0A\n-    %0A    def warning()%0A\n   %0A%0A\n@@ -442,14 +442,22 @@\n t(%22 %22)%0A%0A\n+      %0A%0A\n main()\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-24_10-51-10",
+            "content": "class Animal:\n    def __init__(self, species: str, sound: str):\n        self.species: str = species\n        self.sound: str = sound\n        self.age: int = 0\n    \n    def ageBy(self):\n\n    def makeSound(self):\n    \n    def warning()\n  \n\n    def __str__(self) -> str:\n        return f\"Species:{self.species}, Age:{self.sound}, Sound:{self.age}\"\n\ndef main():\n    animal = Animal(\"\", \"\")\n    while True:\n        line: str = input()\n        args: list[str] = line.split(\" \")\n\nmain()",
+            "lines": "23"
+        }
+    ]
+}

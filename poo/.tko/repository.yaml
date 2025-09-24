@@ -10,11 +10,12 @@ expanded:
 - bloco_a-configuração-de-ambiente
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  toalha: '{rate:100, human:sim_amigo_monitor, guide:sim, alone:6, study:180}'
 flags:
   quests: 2
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: cmd_in_out
+index: animal
