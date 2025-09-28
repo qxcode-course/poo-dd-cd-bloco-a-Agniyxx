@@ -11,7 +11,7 @@ class Animal:
 
     def makeSound(self) :
         if self.sound == "0":
-            return ("")
+            return ("---")
         if self.sound == "1":
             return ("")
         if self.sound == "2":
@@ -29,14 +29,20 @@ def main():
     animal = Animal("","")
     while True:
         line: str = input()
-        args: str = line.split(" ")
+        args: list[str] = line.split(" ")
         
         if args[0] == "$end":
             break
-        elif args[0] == "$new":
+        elif args[0] == "$init":
             species = args[1]
             sound = args[2]
             animal = Animal(species, sound)
         elif args[0] == "$show":
             print(animal)
+        elif args[0] == "$grow":
+            increment = int(args[1])
+            animal.ageBy(increment)
+        else:
+            print("fail: comando desconhecido")
+
 main()
