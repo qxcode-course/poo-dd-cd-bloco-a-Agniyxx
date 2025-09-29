@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-29_16-41-55",
+            "content": "class Calculadora:\n    def __init__(self, display: int, battery: int):\n        self.display = \n        self.battery =\n        self.batteryMax = \n\n\n\n\n\n\n    def __str__(self) -> str:\n        return f\"display = {display:.2f}, battery = {battery}\"",
+            "lines": "13"
+        }
+    ]
+}
