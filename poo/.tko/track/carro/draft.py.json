@@ -27,8 +27,48 @@
         },
         {
             "label": "2025-09-29_16-21-08",
-            "content": "class Carro:\n    def __init__ (self, passageiros: int, km: int, gas: int):\n        self.passageiros: int = passageiros\n        self.km: int = km\n        self.gas: int = gas\n    \n\n\n\n\n    def __str__(self) -> str:\n        return f\"pass:{self.passageiros}, gas:{gas} km:{self.km}\"",
+            "content": "@@ -1,40 +1,4 @@\n-gasMax: int = 100%0ApassMax: int = 2%0A%0A\n clas\n@@ -65,35 +65,8 @@\n gas:\n- int, gasMax: int, passMax:\n  int\n@@ -92,33 +92,43 @@\n sageiros: int = \n-0\n+passageiros\n %0A        self.km\n@@ -135,17 +135,18 @@\n : int = \n-0\n+km\n %0A       \n@@ -166,181 +166,18 @@\n t = \n-0%0A%0A    def enter(self):%0A        if self.passageiros %3E= self.passMax():%0A            print(%22fail: limite de pessoas atingido%22)%0A        else:%0A             self.passageiros += 1\n+gas%0A    %0A%0A\n %0A%0A%0A \n",
             "lines": "12"
+        },
+        {
+            "label": "2025-09-29_19-59-51",
+            "content": "@@ -219,69 +219,8 @@\n  = 0\n-%0A        self.gasMax: int = 100%0A        self.passMax: int = 2\n %0A%0A  \n@@ -281,16 +281,18 @@\n .passMax\n+()\n :%0A      \n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-09-29_20-02-25",
+            "content": "@@ -451,119 +451,8 @@\n = 1%0A\n-    %0A    def leave(self):%0A        if self.passageiros == 0:%0A            print(%22fail: nao ha ninguem no carro%22)%0A\n %0A%0A  \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-09-29_20-06-53",
+            "content": "@@ -505,9 +505,9 @@\n ros \n-%3C\n+=\n = 0:\n@@ -562,60 +562,8 @@\n o%22)%0A\n-        else self.passageiros -= 1:%0A%0A    def show():\n %0A%0A  \n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-09-29_20-32-34",
+            "content": "@@ -570,29 +570,16 @@\n     else\n-:%0A           \n  self.pa\n@@ -592,16 +592,17 @@\n ros -= 1\n+:\n %0A%0A    de\n",
+            "lines": "26"
+        },
+        {
+            "label": "2025-09-29_20-33-36",
+            "content": "@@ -281,104 +281,8 @@\n = 2%0A\n- %0A     def __str__(self):%0A        return f%22pass:%7Bself.passageiros%7D, gas:%7Bgas%7D km:%7Bself.km%7D%22%0A    \n %0A   \n@@ -622,8 +622,105 @@\n  show():\n+%0A%0A    def __str__(self) -%3E str:%0A        return f%22pass:%7Bself.passageiros%7D, gas:%7Bgas%7D km:%7Bself.km%7D%22\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_20-36-45",
+            "content": "@@ -722,21 +722,4 @@\n w():\n-%0A%0A    def main():\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-09-29_20-37-24",
+            "content": "@@ -720,35 +720,10 @@\n how(\n-self):%0A        print (self\n )\n+:\n %0A%0A  \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-09-29_20-39-25",
+            "content": "gasMax: int = 100\npassMax: int = 2\n\nclass Carro:\n    def __init__ (self, passageiros: int, km: int, gas: int, gasMax: int, passMax: int):\n        self.passageiros: int = 0\n        self.km: int = 0\n        self.gas: int = 0\n        self.gasMax: int = 100\n        self.passMax: int = 2\n \n     def __str__(self):\n        return f\"pass:{self.passageiros}, gas:{gas} km:{self.km}\"\n    \n    def enter(self):\n        if self.passageiros >= self.passMax:\n            print(\"fail: limite de pessoas atingido\")\n        else:\n             self.passageiros += 1\n    \n    def leave(self):\n        if self.passageiros <= 0:\n            print(\"fail: nao ha ninguem no carro\")\n        else:\n            self.passageiros -= 1\n\n    def show(self):\n        print (self)\n\n    def main():",
+            "lines": "30"
         }
     ]
 }
