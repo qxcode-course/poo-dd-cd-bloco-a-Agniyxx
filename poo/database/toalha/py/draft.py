@@ -33,7 +33,7 @@ def main():
 
         if args[0] == "end":
             break
-        elif args[0] == "new": # color size
+        elif args[0] == "new": 
             color = args[1]
             size = args[2]
             toalha = Towel(color, size)

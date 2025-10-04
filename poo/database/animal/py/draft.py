@@ -7,37 +7,38 @@ class Animal:
     def ageBy(self, increment: int): #envelhecer
         self.age += increment
         if self.age >= 4:
-            print("warning: {species} morreu")
+            print (f"warning: {self.species} morreu")
 
     def makeSound(self) :
         if self.sound == "0":
             return ("---")
         if self.sound == "1":
-            return ("")
+            return self.sound 
         if self.sound == "2":
-            return ("")
+            return self.sound 
         if self.sound == "3":
-            return ("")
+            return self.sound
         if self.sound == "4":
             return "RIP"
-        return 0
 
     def __str__(self) -> str:
-        return f"Species:{self.species}, Age:{self.sound}, Sound:{self.age}"
+        return f"Species:{self.species}, Age:{self.age}, Sound:{self.makeSound()}"
 
 def main():
     animal = Animal("","")
     while True:
-        line: str = input()
-        args: list[str] = line.split(" ")
-        
+        try:
+            line: str = input()
+        except EOFError:
+            break
+        args: list[str] = line.split(" ")  
         if args[0] == "$end":
             break
-        elif args[0] == "$init":
+        if args[0] == "$init":
             species = args[1]
             sound = args[2]
             animal = Animal(species, sound)
-        elif args[0] == "$show":
+        if args[0] == "$show":
             print(animal)
         elif args[0] == "$grow":
             increment = int(args[1])

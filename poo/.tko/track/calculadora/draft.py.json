@@ -2,8 +2,33 @@
     "patches": [
         {
             "label": "2025-09-29_16-41-55",
-            "content": "class Calculadora:\n    def __init__(self, display: int, battery: int):\n        self.display = \n        self.battery =\n        self.batteryMax = \n\n\n\n\n\n\n    def __str__(self) -> str:\n        return f\"display = {display:.2f}, battery = {battery}\"",
+            "content": "@@ -65,30 +65,8 @@\n  int\n-, batteryMax: int= 100\n ):%0A \n@@ -87,23 +87,16 @@\n splay = \n-display\n %0A       \n@@ -110,24 +110,16 @@\n attery =\n- battery\n %0A       \n@@ -137,26 +137,21 @@\n ryMax = \n-batteryMax\n+%0A%0A%0A%0A%0A\n %0A%0A    de\n@@ -202,21 +202,16 @@\n play = %7B\n-self.\n display:\n@@ -227,21 +227,16 @@\n tery = %7B\n-self.\n battery%7D\n@@ -240,285 +240,4 @@\n ry%7D%22\n-%0A    %0A    def recarregar(self, increment: int):%0A        if self.battery %3E= self.batteryMax:%0A         print(%22fail: limite de carga atingido%22)%0A        else:%0A             self.battery += 1%0A%0A    def soma(self):%0A        if %0A%0A        else:%0A            print(%22fail: bateria insuficiente%22)\n",
             "lines": "13"
+        },
+        {
+            "label": "2025-10-04_16-15-12",
+            "content": "@@ -34,16 +34,44 @@\n __(self,\n+ display: int, battery: int,\n  battery\n@@ -105,25 +105,31 @@\n f.display = \n-0\n+display\n %0A        sel\n@@ -140,17 +140,23 @@\n ttery = \n-0\n+battery\n %0A       \n@@ -496,389 +496,81 @@\n self\n-, a: int, b: int):%0A        if self.battery %3E 0:%0A            self.display = a + b%0A            self.battery -= 1%0A        else:%0A            print(%22fail: bateria insuficiente%22)%0A    %0A    def divis%C3%A3o(self, num: int, den: int):%0A        if self.battery %3E 0:%0A            self.display = num/den%0A            self.battery -= 1%0A        else:%0A            print(%22fail: bateria insuficiente%22)%0A        \n+):%0A        if %0A%0A        else:%0A            print(%22fail: bateria insuficiente%22)\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-04_16-26-16",
+            "content": "@@ -688,74 +688,8 @@\n  if \n-den = 0:%0A            print(%22fail: divisao por zero%22)%0A        elif \n self\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-04_16-30-34",
+            "content": "@@ -689,17 +689,16 @@\n if den =\n-=\n  0:%0A    \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-04_16-30-52",
+            "content": "@@ -300,42 +300,8 @@\n t):%0A\n-        self.battery += increment%0A\n     \n@@ -900,18 +900,8 @@\n e%22)%0A\n-    %0A    %0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-10-04_17-14-27",
+            "content": "class Calculadora:\n    def __init__(self, batteryMax: int= 100):\n        self.display = 0\n        self.battery = 0\n        self.batteryMax = batteryMax\n\n    def __str__(self) -> str:\n        return f\"display = {self.display:.2f}, battery = {self.battery}\"\n    \n    def recarregar(self, increment: int):\n        self.battery += increment\n        if self.battery >= self.batteryMax:\n         print(\"fail: limite de carga atingido\")\n        else:\n             self.battery += 1\n\n    def soma(self, a: int, b: int):\n        if self.battery > 0:\n            self.display = a + b\n            self.battery -= 1\n        else:\n            print(\"fail: bateria insuficiente\")\n    \n    def divis\u00e3o(self, num: int, den: int):\n        if den == 0:\n            print(\"fail: divisao por zero\")\n        elif self.battery > 0:\n            self.display = num/den\n            self.battery -= 1\n        else:\n            print(\"fail: bateria insuficiente\")\n    \n    \n        ",
+            "lines": "34"
         }
     ]
 }
