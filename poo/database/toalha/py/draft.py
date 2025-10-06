@@ -29,6 +29,7 @@ def main():
     toalha = Towel("", "")
     while True:
         line: str = input()
+        print("$" + line)
         args: list[str] = line.split(" ")
 
         if args[0] == "end":

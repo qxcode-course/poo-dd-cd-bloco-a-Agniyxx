@@ -12,10 +12,15 @@ expanded:
 - bloco_b-primeiras-classes
 tasks:
   toalha: '{rate:100, human:sim_amigo_monitor, guide:sim, alone:6, study:180}'
+  animal: '{rate:100, human:sim_amigo, iagen:sim_pra_corrijir, alone:8, study:500}'
+  carro: '{rate:100, iagen:sim_no_drive_e_pra_corrigir_meus_erros, alone:7, study:600}'
+  calculadora: '{iagen:sim, alone:7, study:400}'
+  enxugar: '{rate:100, human:sim__amigo, iagen:sim_pedi_pra_corrijir_meus_erros, alone:9,
+    study:600}'
 flags:
   quests: 2
   tracks: 0
   tasks: 0
   graph: 0
   xray: 0
-index: animal
+index: calculadora
